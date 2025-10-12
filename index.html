@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arockt Home</title>
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark main-header px-5 py-3">
+  <div class="container-fluid">
+    <a class="navbar-brand header-logo" href="#">
+      <img src="img/logo.png" width="178" height="58" class="me-2" alt="Arockt">
+    </a>
+    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#accordion">Additional</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-custom ms-2 px-4" href="#contacts">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid px-0" id="home">
+  <div class="row">
+    <div class="col-lg-6 d-flex flex-column justify-content-center main-header py-5 ps-lg-5">
+      <div>
+        <div class="mb-2" style="letter-spacing: 1px; color: #c1b08a; font-size: 0.95rem;">WELCOME TO AROCKT</div>
+        <h1 class="display-5 fw-bold mb-3" style="line-height: 1.2;">Discover Your<br>Dream <span style="color:#AB9278;">Home</span></h1>
+        <p class="mb-4" style="max-width: 420px; color:#cfcfcf;" >Where the future of architecture intertwines with sustainability to create transformative spaces. We are pioneers in crafting environments that enhance human interactions and respect our planet.</p>
+        <a href="#portfolio" class="btn btn-custom btn-lg rounded-3">Get Started →</a>
+      </div>
+    </div>
+    <div class="col-lg-6 position-relative px-0">
+      <div id="mainCarousel" class="carousel slide main-carousel" data-bs-interval="false">
+        <div class="carousel-inner" style="border-radius:0 0 0.8rem 0.8rem;">
+          <div class="carousel-item active">
+            <img src="img/house1.png" alt="House 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/house2.png" alt="House 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/house3.png" alt="House 3">
+          </div>
+        </div>
+        <div class="carousel-numbers">
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-label="1">01</button>
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="2">02</button>
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="3">03</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="container my-5" id="portfolio">
+  <div class="row align-items-center">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <div class="mb-2" style="letter-spacing: 1px; color: #ab9278;">OUR COLLECTION</div>
+      <h2 class="fw-bold mb-3" style="font-size:2.2rem;">Architectural <span style="color:#AB9278;">Elegance</span> Meets <br>Innovations</h2>
+      <p class="mb-4" style="max-width:420px; color:#8d8d8d;">
+        At Arockt, where each project embodies our commitment to innovation, sustainability, and architectural excellence. Dive into our diverse portfolio showcasing a blend of aesthetics, functionality, and environmentally conscious design across various domains.
+      </p>
+      <a href="#houses" class="btn btn-custom btn-lg rounded-3">Book Your Dream House →</a>
+    </div>
+    <div class="col-lg-6 position-relative">
+      <div class="d-flex gap-4 justify-content-center" style="position: relative;">
+        <img src="img/h22.jpg" alt="Project 1"
+             class="shadow rounded-4 card-effect" style="height:220px; z-index:3;">
+        <img src="img/h1.jpg" alt="Project 2"
+             class="shadow rounded-4 card-effect" style="height:220px; margin-top:40px; z-index:2;">
+        <img src="img/h33.jpg" alt="Project 3"
+             class="shadow rounded-4 card-effect" style="height:220px; margin-top:80px; z-index:1;">
+      </div>
+      <button class="btn btn-light position-absolute end-0 top-50" 
+              style="transform:translateY(-50%); background: #fff; border-radius:50%; box-shadow:0 2px 8px #ddd;">⟷</button>
+    </div>
+  </div>
+</section>
+
+<section id="houses" class="container my-5">
+  <h2 class="mb-4 fw-bold">Our homes</h2>
+  <div class="row g-4">
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Modern Home</h5>
+          <p class="card-text">This home combines style and functionality.</p>
+          <a href="#" class="btn btn-custom">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Eco-Home</h5>
+          <p class="card-text">Home with the use of ecologically clean materials.</p>
+          <a href="#" class="btn btn-custom">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Classic Home</h5>
+          <p class="card-text">Classic style with modern amenities.</p>
+          <a href="#" class="btn btn-custom">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+<section id ="accordion" 
+         class ="container my-5">
+
+   <h2>Additional</h2>
+
+   <div class ="accordion mt-3"
+        id ="servicesAccordion">
+
+     <div class ="accordion-item">
+       <h2 class ="accordion-header"
+           id ="headingOne">
+
+         <button 
+           class ="accordion-button"
+           type ="button"
+           data-bs-toggle ="collapse"
+           data-bs-target ="#collapseOne"
+           aria-expanded ="true"
+           aria-controls ="collapseOne">
+
+            Interior Design Consultation
+         </button>
+
+       </h2>
+
+       <div id ="collapseOne"
+            class ="accordion-collapse collapse show"
+            aria-labelledby ="headingOne"
+            data-bs-parent ="#servicesAccordion">
+
+         <div 
+           class ="accordion-body">
+
+           Get expert help to make your new house truly feel like home. Our experienced interior designers will work with you to create a personalized design plan that reflects your style, preferences, and budget. From selecting color palettes and furniture to optimizing space and lighting, we'll guide you through the process to create a beautiful and functional living space.
+         </div>
+
+       </div>
+
+     </div>
+
+     <div 
+       class ="accordion-item">
+
+       <h2 
+         class ="accordion-header"
+         id ="headingTwo">
+
+         <button 
+           class ="accordion-button collapsed"
+           type ="button"
+           data-bs-toggle ="collapse"
+           data-bs-target ="#collapseTwo"
+           aria-expanded ="false"
+           aria-controls ="collapseTwo">
+
+           Smart Home Integration Package
+         </button>
+
+       </h2>
+
+       <div id ="collapseTwo"
+            class ="accordion-collapse collapse"
+            aria-labelledby ="headingTwo"
+            data-bs-parent ="#servicesAccordion">
+
+         <div 
+           class ="accordion-body">
+
+           Upgrade your home with the latest smart home technology. Our package includes professional installation and setup of a smart thermostat, lighting system, security cameras, and voice assistant integration. Control your home's comfort, security, and energy consumption from anywhere with your smartphone or voice commands.
+         </div>
+
+       </div>
+
+     </div>
+
+     <div 
+       class ="accordion-item">
+
+       <h2 
+         class ="accordion-header"
+         id ="headingThree">
+         <button 
+           class ="accordion-button collapsed"
+           type ="button"
+           data-bs-toggle ="collapse"
+           data-bs-target ="#collapseThree"
+           aria-expanded ="false"
+           aria-controls ="collapseThree">
+
+           Landscaping and Garden Design
+         </button>
+
+       </h2>
+
+       <div id ="collapseThree"
+            class ="accordion-collapse collapse"
+            aria-labelledby ="headingThree"
+            data-bs-parent ="#servicesAccordion">
+
+         <div 
+           class ="accordion-body">
+
+           Create the perfect outdoor oasis with our landscaping and garden design service. Our team of landscape architects will design a beautiful and functional outdoor space that complements your home's architecture and your lifestyle. From lush gardens and relaxing patios to energy-efficient irrigation systems, we'll transform your yard into a haven.
+         </div>
+
+       </div>
+
+     </div>
+
+   </div>
+
+</section>
+
+
+<footer class="contacts mt-4" id="contacts">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-3">
+        <h5>Arockt</h5>
+        <p>Architectural excellence meets sustainability.</p>
+      </div>
+      <div class="col-lg-4 mb-3">
+        <h6>Contact Us</h6>
+        <p>
+          <span class="d-block mb-1">Phone: +1 555-123-4567</span>
+          <span class="d-block mb-1">Email: info@arockt.com</span>
+          <span class="d-block">Address: Main St, City, Country</span>
+        </p>
+      </div>
+      <div class="col-lg-4 mb-3">
+        <h6>Follow Us</h6>
+        <a href="#" class="me-3 text-decoration-none text-light"><img src="https://img.icons8.com/material-outlined/24/ab9278/facebook-new.png"/></a>
+        <a href="#" class="me-3 text-decoration-none text-light"><img src="https://img.icons8.com/material-outlined/24/ab9278/instagram-new.png"/></a>      </div>
+    </div>
+    <div class="text-center mt-3" style="font-size: 13px;">&copy; 2025 Arockt. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.querySelectorAll('.carousel-numbers button').forEach((btn, idx, arr) => {
+   btn.addEventListener('click', function(){
+     arr.forEach(b => b.classList.remove('active'));
+     btn.classList.add('active');
+   });
+});
+
+const aboutBlock = document.querySelector('.about-block');
+const observer = new IntersectionObserver(entries => {
+   entries.forEach(entry => {
+     if (entry.isIntersecting) {
+       aboutBlock.classList.add('visible');
+       observer.unobserve(entry.target);
+     }
+   });
+});
+observer.observe(aboutBlock);
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+   link.addEventListener('click', function(e) {
+     e.preventDefault();
+     const target = this.getAttribute('href');
+     const targetElement = document.querySelector(target);
+     if(targetElement) {
+       window.scrollTo({
+         top: targetElement.offsetTop,
+         behavior: 'smooth'
+       });
+     }
+   });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+   link.addEventListener('click', function(e) {
+     let target = this.getAttribute('href');
+     if(document.querySelector(target)) {
+       document.querySelectorAll('section, .container-fluid').forEach(sec => sec.classList.remove('d-block','d-none'));
+       if(target === '#home') {
+         document.querySelector('#carouselPage').classList.add('d-none');
+       } else if(target === '#carouselPage') {
+         document.querySelector('#carouselPage').classList.remove('d-none');
+         document.querySelector('#portfolio').classList.add('d-none');
+       } else if(target === '#portfolio') {
+         document.querySelector('#carouselPage').classList.add('d-none');
+         document.querySelector('#portfolio').classList.remove('d-none');
+       } else if(target === '#houses') {
+         document.querySelector('#portfolio').classList.add('d-none');
+         document.querySelector('#houses').classList.remove('d-none');
+       } else if(target === '#accordion') {
+         document.querySelector('#houses').classList.add('d-none');
+         document.querySelector('#accordion').classList.remove('d-none');
+       }
+     }
+   });
+});
+</script>
+
+</body>
+
+</html>

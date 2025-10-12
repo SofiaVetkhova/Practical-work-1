@@ -1,0 +1,130 @@
+body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #F6F6F6;
+    }
+    .main-header {
+      background: #211B16;
+      color: #fff;
+      min-height: 90px;
+    }
+    .header-logo {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    .btn-custom {
+      background: #AB9278;
+      color: #fff;
+      border: none;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .btn-custom:hover { 
+      background: #8f7c64; 
+      transform: scale(1.05);
+    }
+    .main-carousel img {
+      object-fit: cover;
+      height: 550px;
+      width: 100%;
+      border-radius: 0 0 0.5rem 0.5rem;
+    }
+    .carousel-numbers {
+      position: absolute;
+      right: 1.8rem;
+      bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .carousel-numbers button {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 1.2rem;
+      transition: color 0.2s, transform 0.3s;
+    }
+    .carousel-numbers button.active {
+      color: #AB9278;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .carousel-numbers button:hover {
+      transform: scale(1.1);
+    }
+    .about-block {
+      background: #211B16;
+      background-size: 100% 100%;
+      color: #fff;
+      padding: 0;
+      border-radius: 0.5em;
+      position: relative;
+      min-width: 1096px;
+      z-index: 2;
+      top: -2rem;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.12);
+      opacity: 0; 
+      transform: translateY(20px); 
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+    }
+    .about-block.visible {
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+    .contacts {
+      background: #211B16;
+      color: #fff;
+      padding: 2rem 0;
+    }
+    .nav-pills .nav-link.active {
+      background-color: #AB9278;
+    }
+  
+    .card-effect {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card-effect:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: #AB9278;
+      color: white;
+    }
+    .accordion-button {
+      background-color: #f8f9fa; 
+    }
+
+
+    @media (max-width: 768px) {
+        .header-logo {
+            font-size: 1.5rem; 
+        }
+        .main-header {
+            min-height: 300px; 
+        }
+        .carousel-numbers {
+            right: 1rem; 
+            bottom: 2rem; 
+        }
+        .about-block {
+            left: 1rem; 
+            max-width: calc(100% - 2rem); 
+        }
+        .card-effect {
+            margin-bottom: 20px; 
+        }
+        .contacts {
+            padding: 1rem; 
+        }
+    }
+
+    @media (max-width: 576px) {
+        .btn-custom {
+            width: 100%; 
+        }
+        .carousel-numbers button {
+            font-size: 1rem; 
+        }
+        .about-block {
+            padding: 1rem; 
+        }
+    }
